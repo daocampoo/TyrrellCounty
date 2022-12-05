@@ -1,0 +1,75 @@
+h1, h2, h3, h4 {
+    color: #206ba4;
+}
+
+nav {
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
+}
+
+.navbar .navbar-nav .nav-link {
+    font-size: 1.1em;
+    color: #206ba4;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    color: #220066;
+}
+
+.nav-item {
+    padding: 2em;
+    margin-top: 1em;
+}
+
+#logo {
+    display: block;
+    width: 40%;
+}
+
+.hero {
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: cover;
+}
+
+.hero-pad {
+    padding: 12rem;
+}
+
+/* Social Media Logos */
+#social-row ul {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    padding-left: 0;
+}
+
+#social-row ul li {
+    width: 30px;
+}
+
+#social-row ul li a img {
+    width: 100%;
+}
+
+/* Mobile Style Rules */
+@media screen and (max-width: 750px) {
+    #logo {
+        display: none;
+    }
+
+    #social-row ul {
+        display: flex;
+        margin: 2em auto;
+        gap: 2em;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    #social-row ul li {
+        width: 60px;
+    }
+
+    .hero-pad {
+        padding: 3rem;
+    }
+}
